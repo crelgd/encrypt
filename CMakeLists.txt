@@ -1,3 +1,13 @@
-set(SOURCE main.cpp file.cpp)
+cmake_minimum_required(VERSION 3.5)
+project(main)
 
-add_executable(main ${SOURCE})
+set(SOURCES 
+    src/main.cpp 
+    src/file.cpp
+)
+
+include_directories(
+    include
+)
+
+add_executable(main ${SOURCES})
